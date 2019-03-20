@@ -1,0 +1,16 @@
+#canvas-graph
+{
+    border:1px solid #000000;
+    width: 600px;
+    height: 500px;
+}
+
+#buttons-canvas
+{
+    width: 600px;
+}
+
+#export-button
+{
+    float: right;
+}
