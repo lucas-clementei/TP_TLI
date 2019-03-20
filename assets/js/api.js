@@ -1,7 +1,4 @@
-
-
-
-function addVertice() {   
+function addVertice() {
 
   }
 
@@ -35,4 +32,3 @@ function toImport(){
 
 
 }
-
