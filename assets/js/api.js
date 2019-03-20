@@ -1,6 +1,6 @@
 function addVertice() {
 
-  }
+}
 
 function addEdge() {
 
