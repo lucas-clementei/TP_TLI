@@ -1,5 +1,5 @@
 function addVertice() {   
-
+cc
   }
 
 function addEdge() {
