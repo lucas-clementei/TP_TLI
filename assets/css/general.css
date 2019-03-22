@@ -9,7 +9,12 @@
     width: 600px;
 }
 
-#export-button
+#export-button, #reset-button
 {
     float: right;
+}
+
+#reset-button
+{
+    margin-right: 5px;
 }

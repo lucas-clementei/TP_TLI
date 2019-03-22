@@ -1,17 +1,42 @@
 class Graph{
 
-  constructor(name, direction){
+  constructor(name, directed){
     this.name = name;
-    this.direction = direction;
+    this.directed = directed;
     this.vertices = [];
     this.edges = [];
   }
 
-  addVertex(pos, label){
-    this.vertices.push(new Vertex(pos, label));
+  addVertex(vertex){
+    this.vertices.push(vertex);
   }
 
-  addEdge(id1, id2){
-    this.edges.push(id1, id2);
+  addEdge(edge){
+    this.edges.push(edge);
   }
+
+  reset(){
+    this.vertices = [];
+    this.edges = [];
+  }
+
+  deleteVertex(id){
+      for(var i in this.edges)
+      {
+          if(this.edges[i].id == id)
+          {
+              this.edges.splice(i, 1);
+          }
+      }
+
+      for(var i in this.vertices)
+      {
+          if(this.vertices[i].id == id)
+          {
+            this.vertices.splice(i, 1);
+            break;
+          }
+      }
+  }
+
 }
