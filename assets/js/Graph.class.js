@@ -15,6 +15,7 @@ class Graph{
     this.edges.push(edge);
   }
 
+<<<<<<< HEAD
   reset(){
     this.vertices = [];
     this.edges = [];
@@ -39,4 +40,21 @@ class Graph{
       }
   }
 
+=======
+  getPosition(posi){
+
+    var id=-1;
+
+    for(let vertex of this.vertices) {
+
+      if(posi.x > vertex.pos.x - 10 && posi.x < vertex.pos.x + 15
+        && posi.y > vertex.pos.y - 10 && posi.y < vertex.pos.y + 10) {
+        return vertex.id;
+      }
+
+    }
+
+    return id;
+  }
+>>>>>>> b15e1000b8a8a5392e71a40890681af776cd52e2
 }
